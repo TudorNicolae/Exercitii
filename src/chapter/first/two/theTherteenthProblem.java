@@ -19,12 +19,17 @@ public class theTherteenthProblem {
 
         int TemporaryNumber = number;
 
-
+    
         while(TemporaryNumber != 0){
 
             TemporaryNumber = number  % 10;
             number = number / 10;
 
+            if(TemporaryNumber == 5){
+                if ((number % 10 == 1 )){
+                    System.out.println("The number contains 15.");
+                }
+            }
         }
     }
 }
